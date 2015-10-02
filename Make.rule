@@ -1,0 +1,18 @@
+#PROJ_HOME=/project/svn
+PROJ_HOME=/cygdrive/c/Alok/MyCode/GIthub/DataStructure/
+
+LIB_DIR=$(PROJ_HOME)/lib
+
+INCLUDE_DIR=$(PROJ_HOME)/include
+
+#dont know why VPATH is not working in cygwin, if it was working no need to pass -I option
+VPATH = $(INCLUDE_DIR)
+
+CFLAGS = -g -I $(INCLUDE_DIR)
+
+CXXFLAGS = -g -I $(INCLUDE_DIR)
+
+CC = gcc $(CFLAGS)
+
+CXX = g++ $(CXXFLAGS)
+

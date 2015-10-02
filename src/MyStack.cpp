@@ -6,7 +6,7 @@
  */
 
 #include <iostream>
-#include <MyStack.h>
+#include <MyStack.hpp>
 
 using namespace ds;
 

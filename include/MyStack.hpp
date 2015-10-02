@@ -27,7 +27,7 @@ public:
 
 	int pop(T &data);
 };
-
+/*
 template<typename T>
 MyStack<T>::MyStack()
 {
@@ -74,6 +74,7 @@ int MyStack<T>::pop(T &data)
 	return 1;
 }
 
+*/
 
 }
 #endif /* MyStack_HPP_ */

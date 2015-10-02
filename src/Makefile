@@ -32,7 +32,7 @@ BubbleSort.o : BubbleSort.c BubbleSort.h
 	$(CC) $(LCFLAG) BubbleSort.c
 
 MyStack.o : MyStack.cpp MyStack.hpp
-	$(CXX) $(LCFLAG) -ftemplate-depth-25 MyStack.cpp
+	$(CXX) $(LCFLAG) MyStack.cpp
 
 MyQueue.o : MyQueue.hpp
 	$(CXX) $(LCFLAG) -ftemplate-depth-25 MyQueue.hpp
