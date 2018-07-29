@@ -1,6 +1,6 @@
 # DataStructure
 ## The repository includes various Algorithm and Data Structure implamentaion using C & C++
-#### To name the few implemations:
+#### To name the few implementations:
 ###### *) Quick Sort
 ###### *) Heap Sort
 ###### *) Merge Sort
