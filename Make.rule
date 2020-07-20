@@ -1,5 +1,6 @@
 #PROJ_HOME=/project/svn
-PROJ_HOME=/cygdrive/c/Alok/MyCode/GIthub/DataStructure/
+#PROJ_HOME=/cygdrive/c/Alok/MyCode/GIthub/DataStructure/
+PROJ_HOME=..
 
 LIB_DIR=$(PROJ_HOME)/lib
 

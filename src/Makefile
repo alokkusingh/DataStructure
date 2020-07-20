@@ -5,12 +5,19 @@ LCFLAG = -fPIC -c -Wall
 objects = LinkList.o InsertionSort.o MergeSort.o QuickSort.o HeapSort.o BubbleSort.o MyStack.o
 
 #the below dll lib is only when wew are using cygwin
+#sharedL : $(objects) 
+#	$(CXX) -shared -Wl,-soname,libds.so.1 -o libds.so.1.0.1 $(objects) 
+#	mv libds.so.1.0.1 $(LIB_DIR)/
+#	ln -f -s $(LIB_DIR)/libds.so.1.0.1 $(LIB_DIR)/libds.so.1 
+#	ln -f -s $(LIB_DIR)/libds.so.1.0.1 $(LIB_DIR)/libds.so 
+#	ln -f -s $(LIB_DIR)/libds.so.1.0.1 $(LIB_DIR)/libds.dll 
+
+# For Mac OS
 sharedL : $(objects) 
-	$(CXX) -shared -Wl,-soname,libds.so.1 -o libds.so.1.0.1 $(objects) 
+	$(CXX) -dynamiclib -o libds.so.1.0.1 $(objects) 
 	mv libds.so.1.0.1 $(LIB_DIR)/
 	ln -f -s $(LIB_DIR)/libds.so.1.0.1 $(LIB_DIR)/libds.so.1 
 	ln -f -s $(LIB_DIR)/libds.so.1.0.1 $(LIB_DIR)/libds.so 
-	ln -f -s $(LIB_DIR)/libds.so.1.0.1 $(LIB_DIR)/libds.dll 
 
 
 LinkList.o : LinkList.c LinkList.h
